@@ -265,8 +265,7 @@ function renderProducts(productList) {
       <h3>${item.name}</h3>
       <p>${item.desc}</p>
 
-      <div class="card-bottom" style="display:flex; justify-content:space-between; align-items:center;">
-        <span class="product-price" style="font-size:1rem; font-weight:700; color:var(--accent-cyan); font-family:var(--font-heading);">Contact Us for Price</span>
+      <div class="card-bottom" style="display:flex; justify-content:flex-end; align-items:center;">
         <span class="availability-status">
           <span class="status-dot"></span> Available
         </span>
