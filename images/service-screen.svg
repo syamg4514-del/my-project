@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="url(#bgGrad)" />
+  <circle cx="200" cy="150" r="110" fill="rgba(0,242,254,0.05)" />
+
+  <!-- Smartphone Base -->
+  <g transform="translate(130, 40)">
+    <rect x="0" y="0" width="140" height="220" rx="20" fill="#090d16" stroke="url(#accentGrad)" stroke-width="3" filter="url(#glow)" />
+    <rect x="8" y="10" width="124" height="200" rx="14" fill="#0f172a" />
+    
+    <!-- Screen Repair Layer / Grid -->
+    <rect x="14" y="20" width="112" height="180" rx="8" fill="#162032" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="4 4" />
+    
+    <!-- Suction / Repair Tool Visual -->
+    <circle cx="70" cy="110" r="30" fill="rgba(0,242,254,0.15)" stroke="#00f2fe" stroke-width="2" />
+    <circle cx="70" cy="110" r="12" fill="#00f2fe" opacity="0.8" />
+    <line x1="70" y1="80" x2="70" y2="40" stroke="#00f2fe" stroke-width="4" stroke-linecap="round" />
+    <rect x="55" y="30" width="30" height="10" rx="5" fill="#4facfe" />
+    
+    <!-- Sparkles / Calibration -->
+    <path d="M25 45 L35 45 M30 40 L30 50" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" />
+    <path d="M115 175 L125 175 M120 170 L120 180" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Service Title Badge -->
+  <rect x="30" y="235" width="340" height="42" rx="10" fill="rgba(15,23,42,0.85)" stroke="rgba(0,242,254,0.3)" />
+  <text x="200" y="261" font-family="sans-serif" font-weight="700" font-size="15" fill="#ffffff" text-anchor="middle">📱 Display &amp; Touch Screen Replacement</text>
+</svg>

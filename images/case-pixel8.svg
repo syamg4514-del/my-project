@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradPix" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#1b263b"/>
+    </linearGradient>
+    <linearGradient id="pixBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="pixGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00b8a9"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+    <filter id="glowPix">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="url(#bgGradPix)"/>
+  <circle cx="200" cy="150" r="110" fill="#00b8a9" opacity="0.08" filter="url(#glowPix)"/>
+
+  <!-- Google Pixel 8 Pro Case with Signature Horizontal Camera Bar -->
+  <g transform="translate(130, 30)">
+    <rect x="0" y="0" width="140" height="240" rx="24" fill="url(#pixBody)" stroke="url(#pixGlow)" stroke-width="3.5" filter="url(#glowPix)"/>
+    <rect x="8" y="8" width="124" height="224" rx="18" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5"/>
+    
+    <!-- Signature Pixel Camera Bar Visor -->
+    <rect x="6" y="30" width="128" height="38" rx="12" fill="#0b0f19" stroke="#00b8a9" stroke-width="2"/>
+    <rect x="18" y="40" width="60" height="18" rx="9" fill="#1e293b" stroke="#00f2fe" stroke-width="1.5"/>
+    <circle cx="30" cy="49" r="6" fill="#00f2fe"/>
+    <circle cx="48" cy="49" r="6" fill="#00f2fe"/>
+    <circle cx="66" cy="49" r="6" fill="#00f2fe"/>
+    <circle cx="102" cy="49" r="5" fill="#00b8a9"/>
+
+    <!-- Google 'G' Logo Engraving -->
+    <circle cx="70" cy="140" r="16" fill="none" stroke="url(#pixGlow)" stroke-width="3"/>
+    <path d="M 70 140 H 84" stroke="url(#pixGlow)" stroke-width="3"/>
+  </g>
+</svg>

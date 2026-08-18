@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="caseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="150" r="110" fill="#00f2fe" opacity="0.08" filter="url(#glow)"/>
+
+  <!-- iPhone 15 Pro Case -->
+  <g transform="translate(130, 30)">
+    <rect x="0" y="0" width="140" height="240" rx="28" fill="url(#caseGrad)" stroke="url(#cyanGlow)" stroke-width="3.5" filter="url(#glow)"/>
+    <rect x="8" y="8" width="124" height="224" rx="22" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5"/>
+    
+    <!-- iPhone 15 Pro Triple Lens Camera Layout -->
+    <rect x="18" y="18" width="56" height="56" rx="16" fill="#0b0f19" stroke="#00f2fe" stroke-width="2"/>
+    <circle cx="34" cy="34" r="9" fill="#1e293b" stroke="#00f2fe" stroke-width="1.5"/>
+    <circle cx="34" cy="34" r="4" fill="#00f2fe"/>
+    <circle cx="58" cy="34" r="9" fill="#1e293b" stroke="#00f2fe" stroke-width="1.5"/>
+    <circle cx="58" cy="34" r="4" fill="#00f2fe"/>
+    <circle cx="46" cy="56" r="9" fill="#1e293b" stroke="#00f2fe" stroke-width="1.5"/>
+    <circle cx="46" cy="56" r="4" fill="#00f2fe"/>
+
+    <!-- MagSafe Magnet Array -->
+    <circle cx="70" cy="145" r="38" fill="none" stroke="url(#cyanGlow)" stroke-width="3" stroke-dasharray="6 4" opacity="0.9"/>
+    <circle cx="70" cy="145" r="6" fill="#00f2fe"/>
+    <line x1="70" y1="183" x2="70" y2="200" stroke="url(#cyanGlow)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

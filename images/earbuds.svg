@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#141c2e"/>
+    </linearGradient>
+    <linearGradient id="caseCover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#00b8a9"/>
+    </linearGradient>
+    <filter id="glow4">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="url(#bgGrad4)"/>
+  <circle cx="200" cy="150" r="110" fill="#00b8a9" opacity="0.08" filter="url(#glow4)"/>
+
+  <!-- Charging Case -->
+  <g transform="translate(100, 70)">
+    <rect x="0" y="30" width="200" height="130" rx="36" fill="url(#caseCover)" stroke="url(#tealGrad)" stroke-width="3" filter="url(#glow4)"/>
+    <line x1="0" y1="75" x2="200" y2="75" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+    <circle cx="100" cy="115" r="5" fill="#00f2fe" filter="url(#glow4)"/>
+
+    <!-- Left Earbud Floating Above Case -->
+    <g transform="translate(35, -45)">
+      <circle cx="25" cy="25" r="22" fill="#1e293b" stroke="#00f2fe" stroke-width="2"/>
+      <rect x="18" y="35" width="14" height="40" rx="7" fill="url(#tealGrad)"/>
+      <circle cx="25" cy="20" r="8" fill="#00f2fe"/>
+    </g>
+
+    <!-- Right Earbud Floating Above Case -->
+    <g transform="translate(115, -45)">
+      <circle cx="25" cy="25" r="22" fill="#1e293b" stroke="#00f2fe" stroke-width="2"/>
+      <rect x="18" y="35" width="14" height="40" rx="7" fill="url(#tealGrad)"/>
+      <circle cx="25" cy="20" r="8" fill="#00f2fe"/>
+    </g>
+  </g>
+</svg>

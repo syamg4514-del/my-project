@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="caseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card Base -->
+  <rect width="400" height="300" rx="16" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="150" r="110" fill="#00f2fe" opacity="0.06" filter="url(#glow)"/>
+
+  <!-- Phone Case Outer Body -->
+  <g transform="translate(130, 30)">
+    <rect x="0" y="0" width="140" height="240" rx="28" fill="url(#caseGrad)" stroke="url(#cyanGlow)" stroke-width="3.5" filter="url(#glow)"/>
+    
+    <!-- Transparent Glass Back Panel -->
+    <rect x="8" y="8" width="124" height="224" rx="22" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5"/>
+    
+    <!-- Camera Island Ring -->
+    <rect x="20" y="20" width="48" height="48" rx="14" fill="#0b0f19" stroke="#00f2fe" stroke-width="2"/>
+    <circle cx="34" cy="34" r="8" fill="#1e293b" stroke="#00f2fe" stroke-width="1.5"/>
+    <circle cx="34" cy="34" r="4" fill="#00f2fe"/>
+    <circle cx="52" cy="44" r="5" fill="#1e293b" stroke="#4facfe" stroke-width="1.5"/>
+
+    <!-- MagSafe Magnet Array Ring -->
+    <circle cx="70" cy="130" r="36" fill="none" stroke="url(#cyanGlow)" stroke-width="3" stroke-dasharray="6 4" opacity="0.85"/>
+    <circle cx="70" cy="130" r="6" fill="#00f2fe"/>
+    <line x1="70" y1="166" x2="70" y2="186" stroke="url(#cyanGlow)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Corner Armor Bumper Highlights -->
+    <path d="M 0 28 A 28 28 0 0 1 28 0" stroke="#00f2fe" stroke-width="4" fill="none"/>
+    <path d="M 112 0 A 28 28 0 0 1 140 28" stroke="#00f2fe" stroke-width="4" fill="none"/>
+    <path d="M 0 212 A 28 28 0 0 0 28 240" stroke="#00f2fe" stroke-width="4" fill="none"/>
+    <path d="M 112 240 A 28 28 0 0 0 140 212" stroke="#00f2fe" stroke-width="4" fill="none"/>
+  </g>
+</svg>

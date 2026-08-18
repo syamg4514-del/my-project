@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="100%" stop-color="#1c2541"/>
+    </linearGradient>
+    <linearGradient id="chargerBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="neonPulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#00b8a9"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="400" height="300" rx="16" fill="url(#bgGrad2)"/>
+  <circle cx="200" cy="150" r="100" fill="#00f2fe" opacity="0.08" filter="url(#glow2)"/>
+
+  <!-- Charger Main Block -->
+  <g transform="translate(110, 50)">
+    <!-- Foldable Prongs -->
+    <rect x="-24" y="55" width="28" height="10" rx="2" fill="#64748b"/>
+    <rect x="-24" y="115" width="28" height="10" rx="2" fill="#64748b"/>
+
+    <!-- Main GaN Body Chassis -->
+    <rect x="0" y="0" width="180" height="180" rx="28" fill="url(#chargerBody)" stroke="url(#neonPulse)" stroke-width="3" filter="url(#glow2)"/>
+    <rect x="12" y="12" width="156" height="156" rx="20" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+    <!-- Front Port Interface Plate -->
+    <g transform="translate(120, 30)">
+      <rect x="0" y="0" width="45" height="120" rx="12" fill="#07090e" stroke="#00f2fe" stroke-width="1.5"/>
+
+      <!-- USB-C Port 1 (65W) -->
+      <rect x="10" y="16" width="25" height="10" rx="5" fill="#00f2fe"/>
+      <text x="-25" y="25" fill="#00f2fe" font-family="sans-serif" font-size="9" font-weight="bold">65W C1</text>
+
+      <!-- USB-C Port 2 (30W) -->
+      <rect x="10" y="50" width="25" height="10" rx="5" fill="#4facfe"/>
+      <text x="-25" y="59" fill="#4facfe" font-family="sans-serif" font-size="9" font-weight="bold">30W C2</text>
+
+      <!-- USB-A Port (22.5W) -->
+      <rect x="8" y="84" width="29" height="16" rx="3" fill="#1e293b" stroke="#00b8a9" stroke-width="1.5"/>
+      <rect x="13" y="89" width="19" height="6" fill="#00b8a9"/>
+    </g>
+
+    <!-- Glowing Power Indicator LED Ring -->
+    <circle cx="45" cy="45" r="14" fill="none" stroke="#00f2fe" stroke-width="2.5" filter="url(#glow2)"/>
+    <circle cx="45" cy="45" r="5" fill="#00f2fe"/>
+
+    <!-- GaN Fast Charge Logo -->
+    <path d="M 45 100 L 35 125 H 48 L 40 150 L 58 120 H 46 Z" fill="url(#neonPulse)" filter="url(#glow2)"/>
+  </g>
+</svg>

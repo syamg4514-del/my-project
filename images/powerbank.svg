@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1f2937"/>
+    </linearGradient>
+    <linearGradient id="bankChassis" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7f5af0"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="url(#bgGrad3)"/>
+  <circle cx="200" cy="150" r="110" fill="#7f5af0" opacity="0.08" filter="url(#glow3)"/>
+
+  <!-- Powerbank Body -->
+  <g transform="translate(120, 35)">
+    <rect x="0" y="0" width="160" height="230" rx="24" fill="url(#bankChassis)" stroke="url(#purpleGlow)" stroke-width="3" filter="url(#glow3)"/>
+    <rect x="10" y="10" width="140" height="210" rx="18" fill="rgba(255, 255, 255, 0.03)"/>
+
+    <!-- LED Percentage Battery Display -->
+    <rect x="25" y="25" width="110" height="36" rx="10" fill="#07090e" stroke="#7f5af0" stroke-width="1.5"/>
+    <text x="52" y="50" fill="#00f2fe" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="bold" filter="url(#glow3)">98%</text>
+    <circle cx="115" cy="43" r="4" fill="#10b981"/>
+
+    <!-- MagSafe Ring Centerpiece -->
+    <circle cx="80" cy="135" r="40" fill="none" stroke="url(#purpleGlow)" stroke-width="3" stroke-dasharray="8 4" filter="url(#glow3)"/>
+    <circle cx="80" cy="135" r="8" fill="#00f2fe"/>
+    <path d="M 76 135 L 72 143 H 80 L 76 151" stroke="#07090e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Power Button & Port Highlights -->
+    <rect x="50" y="200" width="60" height="8" rx="4" fill="#7f5af0"/>
+  </g>
+</svg>

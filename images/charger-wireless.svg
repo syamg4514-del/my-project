@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#182238"/>
+    </linearGradient>
+    <linearGradient id="standMat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cyanNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#00b8a9"/>
+    </linearGradient>
+    <filter id="glowW">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" rx="16" fill="url(#bgGradW)"/>
+  <circle cx="200" cy="150" r="110" fill="#00f2fe" opacity="0.08" filter="url(#glowW)"/>
+
+  <!-- 3-in-1 Charging Pad Base -->
+  <g transform="translate(60, 90)">
+    <rect x="0" y="40" width="280" height="90" rx="20" fill="url(#standMat)" stroke="url(#cyanNeon)" stroke-width="3" filter="url(#glowW)"/>
+    
+    <!-- Phone Charging Spot (Left) -->
+    <circle cx="65" cy="85" r="30" fill="none" stroke="#00f2fe" stroke-width="2" stroke-dasharray="4 4"/>
+    <circle cx="65" cy="85" r="6" fill="#00f2fe"/>
+
+    <!-- Watch Charger Puck (Middle Stand) -->
+    <rect x="130" y="-10" width="20" height="70" rx="6" fill="#1e293b" stroke="#00f2fe" stroke-width="1.5"/>
+    <circle cx="140" cy="-5" r="18" fill="#0b0f19" stroke="#00b8a9" stroke-width="2"/>
+    <circle cx="140" cy="-5" r="5" fill="#00b8a9"/>
+
+    <!-- AirPods Charging Spot (Right) -->
+    <rect x="195" y="65" width="50" height="40" rx="12" fill="none" stroke="#4facfe" stroke-width="2" stroke-dasharray="4 4"/>
+    <circle cx="220" cy="85" r="5" fill="#4facfe"/>
+  </g>
+</svg>
