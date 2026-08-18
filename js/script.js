@@ -8,7 +8,6 @@ const PRODUCTS = [
   {
     id: 'case-01',
     name: 'Pro Magnetic Protective Case',
-    price: '₹699',
     category: 'cases',
     categoryName: 'Mobile Cases',
     rating: 4.9,
@@ -24,7 +23,6 @@ const PRODUCTS = [
   {
     id: 'case-02',
     name: 'Armor Shockproof Phone Case',
-    price: '₹799',
     category: 'cases',
     categoryName: 'Mobile Cases',
     rating: 4.9,
@@ -40,7 +38,6 @@ const PRODUCTS = [
   {
     id: 'case-03',
     name: 'Premium Eco-Leather Phone Case',
-    price: '₹999',
     category: 'cases',
     categoryName: 'Mobile Cases',
     rating: 4.8,
@@ -56,7 +53,6 @@ const PRODUCTS = [
   {
     id: 'case-04',
     name: 'Matte Clear TPU Phone Case',
-    price: '₹499',
     category: 'cases',
     categoryName: 'Mobile Cases',
     rating: 4.7,
@@ -74,7 +70,6 @@ const PRODUCTS = [
   {
     id: 'charger-65w',
     name: 'GaN Ultra 65W Triple Port Wall Charger',
-    price: '₹2,199',
     category: 'chargers',
     categoryName: 'Fast Chargers',
     rating: 4.9,
@@ -90,7 +85,6 @@ const PRODUCTS = [
   {
     id: 'charger-wireless',
     name: '3-in-1 Foldable Wireless Charging Station',
-    price: '₹2,499',
     category: 'chargers',
     categoryName: 'Fast Chargers',
     rating: 4.8,
@@ -108,7 +102,6 @@ const PRODUCTS = [
   {
     id: 'powerbank-mag',
     name: 'MagPower 10,000mAh Magnetic Power Bank',
-    price: '₹1,899',
     category: 'powerbanks',
     categoryName: 'Power Banks',
     rating: 4.9,
@@ -126,7 +119,6 @@ const PRODUCTS = [
   {
     id: 'earbuds-anc',
     name: 'SonicPro ANC Wireless Earbuds',
-    price: '₹2,999',
     category: 'audio',
     categoryName: 'Audio',
     rating: 4.8,
@@ -142,7 +134,6 @@ const PRODUCTS = [
   {
     id: 'headphones-pro',
     name: 'StudioBass Over-Ear Wireless Headphones',
-    price: '₹3,499',
     category: 'audio',
     categoryName: 'Audio',
     rating: 4.9,
@@ -160,7 +151,6 @@ const PRODUCTS = [
   {
     id: 'cable-usbc',
     name: 'FlexBraid 100W USB-C Cable (2m)',
-    price: '₹499',
     category: 'cables',
     categoryName: 'USB Cables',
     rating: 4.9,
@@ -178,7 +168,6 @@ const PRODUCTS = [
   {
     id: 'stand-desk',
     name: '360° Rotating Aluminum Desk Phone Stand',
-    price: '₹899',
     category: 'accessories',
     categoryName: 'Accessories',
     rating: 4.8,
@@ -194,7 +183,6 @@ const PRODUCTS = [
   {
     id: 'mount-car',
     name: 'MagDrive Magnetic Car Vent Phone Mount',
-    price: '₹799',
     category: 'accessories',
     categoryName: 'Accessories',
     rating: 4.7,
@@ -242,7 +230,7 @@ function initNavbar() {
 }
 
 /* ==========================================================================
-   PRODUCT CATALOG RENDERING (With INR Prices & IST Local Support)
+   PRODUCT CATALOG RENDERING
    ========================================================================== */
 function renderProducts(productList) {
   const gridContainer = document.getElementById('productGrid');
@@ -278,7 +266,7 @@ function renderProducts(productList) {
       <p>${item.desc}</p>
 
       <div class="card-bottom" style="display:flex; justify-content:space-between; align-items:center;">
-        <span class="product-price" style="font-size:1.2rem; font-weight:800; color:var(--accent-cyan); font-family:var(--font-heading);">${item.price}</span>
+        <span class="product-price" style="font-size:1rem; font-weight:700; color:var(--accent-cyan); font-family:var(--font-heading);">Contact Us for Price</span>
         <span class="availability-status">
           <span class="status-dot"></span> Available
         </span>
