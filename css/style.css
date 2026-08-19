@@ -6,10 +6,10 @@
 
 :root {
   /* Color Palette - Deep Space Obsidian & Cyber Cyan */
-  --bg-dark: #07090e;
-  --bg-surface: #0e131f;
-  --bg-surface-elevated: #161c2e;
-  --bg-glass: rgba(14, 19, 31, 0.75);
+  --bg-dark: #1a1a1a; /* brighter background */
+  --bg-surface: #262626; /* brighter surface */
+  --bg-surface-elevated: #333333; /* brighter elevated surface */
+  --bg-glass: rgba(40, 40, 40, 0.75); /* brighter glass */
   --bg-glass-card: rgba(255, 255, 255, 0.035);
   --bg-glass-hover: rgba(255, 255, 255, 0.07);
 
