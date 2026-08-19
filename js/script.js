@@ -434,7 +434,7 @@ function initContactForm() {
       });
 
       if (response.ok) {
-        showToast(`Thank you, ${name}! Your entry was dynamically appended to contact_submissions.xlsx.`);
+        showToast(`Thank you, ${name}, for submitting the form. Our team will get in touch with you shortly.`);
         contactForm.reset();
         await renderLiveSubmissionsTable();
         return;
